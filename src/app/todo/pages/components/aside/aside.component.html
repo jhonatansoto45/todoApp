@@ -1,0 +1,54 @@
+<aside class="aside">
+  <h1 class="aside__title">Menú</h1>
+  <div class="aside__item">
+    <figure class="aside__picture">
+      <img
+        src="../../../../../assets/images/user.jpg"
+        alt="user"
+        class="aside__img"
+      />
+    </figure>
+    <p class="aside__name">Romaguera-Crona</p>
+  </div>
+  <div class="aside__item">
+    <span class="material-symbols-outlined aside__logo"> today </span>
+    <p class="aside__text" [ngStyle]="{ cursor: 'pointer' }" routerLink="/home/agregar" >Crear Tarea</p>
+  </div>
+  <div class="aside__item">
+    <span class="material-symbols-outlined aside__logo"> library_books </span>
+    <p class="aside__text" [ngStyle]="{ cursor: 'pointer' }">Ver Tareas</p>
+  </div>
+  <hr />
+  <h2 class="aside__title aside__title--size">Otras aplicaciones</h2>
+  <div class="aside__item">
+    <img
+      src="../../../../../assets/images/logos/todoist-icon.svg"
+      alt=""
+      class="aside__logo__icon"
+    />
+    <a
+      href="https://todoist.com/es"
+      target="__blank"
+      class="aside__text"
+      [ngStyle]="{ cursor: 'pointer' }"
+      >TodoIst
+    </a>
+  </div>
+  <div class="aside__item aside__item--finally">
+    <img
+      src="../../../../../assets/images/logos/microsoft-windows.svg"
+      alt=""
+      class="aside__logo__icon"
+    />
+    <a
+      href="https://todo.microsoft.com/tasks/"
+      target="__blank"
+      class="aside__text"
+      [ngStyle]="{ cursor: 'pointer' }"
+      >Microsoft To Do
+    </a>
+  </div>
+  <div class="aside__legend">
+    <span class="aside__legend__text">2023</span>
+  </div>
+</aside>
