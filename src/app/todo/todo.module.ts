@@ -7,7 +7,7 @@ import { TareasComponent } from './pages/tareas/tareas.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { AsideComponent } from './pages/components/aside/aside.component';
 import { BannerComponent } from './pages/components/banner/banner.component';
-
+import { HomeViewComponent } from './pages/components/home-view/home-view.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +15,9 @@ import { BannerComponent } from './pages/components/banner/banner.component';
     TareasComponent,
     AgregarComponent,
     AsideComponent,
-    BannerComponent
+    BannerComponent,
+    HomeViewComponent,
   ],
-  imports: [
-    CommonModule,
-    TodoRoutingModule
-  ]
+  imports: [CommonModule, TodoRoutingModule],
 })
-export class TodoModule { }
+export class TodoModule {}

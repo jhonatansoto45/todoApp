@@ -1,15 +1,10 @@
 .banner {
   height: 55px;
   background-color: var(--primary-color);
-  position: relative;
+  border-radius: 0 0 25px 25px;
+  cursor: pointer;
 
   .banner__title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     text-align: center;
     font-size: 2.5rem;
     line-height: 55px;
