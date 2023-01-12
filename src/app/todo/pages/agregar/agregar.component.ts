@@ -8,21 +8,18 @@ import { TodoService } from '../../service/todo.service';
   styleUrls: ['./agregar.component.scss'],
 })
 export class AgregarComponent implements OnInit {
-  mdFecha: string = '';
-  mdTitulo: string = '';
-  mdDescripcion: string = '';
+  tarea: Tareas = {
+    titulo: '',
+    fecha: '',
+    descripcion: '',
+    completado: false,
+  };
 
   constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {}
 
   onSubmit(): void {
-    const tarea: Tareas = {
-      fecha: this.mdFecha,
-      titulo: this.mdTitulo,
-      descripcion: this.mdDescripcion,
-      completado: false,
-    };
-    this.todoService.pushTareas(tarea);
+    this.todoService.pushTareas(this.tarea);
   }
 }
