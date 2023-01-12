@@ -1,1 +1,45 @@
-<p>agregar works!</p>
+<section class="agregar">
+  <figure class="agregar__picture">
+    <img
+      src="../../../../assets/images/bg-agregar.jpg"
+      alt="agregar"
+      class="agregar__img"
+    />
+  </figure>
+  <div class="agregar__section">
+    <h2 class="agregar__title">¡Agrega tu tarea de forma fácil!</h2>
+    <form class="agregar__form" (ngSubmit)="onSubmit()">
+      <label for="date">
+        <span class="agregar__span">Fecha</span>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          class="agregar__input"
+          [(ngModel)]="mdFecha"
+        />
+      </label>
+      <label for="name">
+        <span class="agregar__span">Nombre Tarea</span>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="agregar__input"
+          [(ngModel)]="mdTitulo"
+        />
+      </label>
+      <label for="description">
+        <span class="agregar__span">Descripción</span>
+        <input
+          type="text"
+          name="description"
+          id="description"
+          class="agregar__input"
+          [(ngModel)]="mdDescripcion"
+        />
+      </label>
+      <button type="submit" class="agregar__btn">Añadir</button>
+    </form>
+  </div>
+</section>

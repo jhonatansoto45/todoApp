@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { TodoRoutingModule } from './todo-routing.module';
 import { HomeComponent } from './pages/home/home.component';
@@ -20,6 +21,6 @@ import { TareasViewComponent } from './pages/components/tareas-view/tareas-view.
     HomeViewComponent,
     TareasViewComponent,
   ],
-  imports: [CommonModule, TodoRoutingModule],
+  imports: [CommonModule, FormsModule, TodoRoutingModule],
 })
 export class TodoModule {}
