@@ -11,12 +11,34 @@
     <p class="aside__name">Romaguera-Crona</p>
   </div>
   <div class="aside__item">
+    <span class="material-symbols-outlined aside__logo"> home </span>
+    <p
+      class="aside__text"
+      [ngStyle]="{ cursor: 'pointer' }"
+      routerLink="/home/about"
+    >
+      Inicio
+    </p>
+  </div>
+  <div class="aside__item">
     <span class="material-symbols-outlined aside__logo"> today </span>
-    <p class="aside__text" [ngStyle]="{ cursor: 'pointer' }" routerLink="/home/agregar" >Crear Tarea</p>
+    <p
+      class="aside__text"
+      [ngStyle]="{ cursor: 'pointer' }"
+      routerLink="/home/agregar"
+    >
+      Crear Tarea
+    </p>
   </div>
   <div class="aside__item">
     <span class="material-symbols-outlined aside__logo"> library_books </span>
-    <p class="aside__text" [ngStyle]="{ cursor: 'pointer' }" routerLink="/home/ver">Ver Tareas</p>
+    <p
+      class="aside__text"
+      [ngStyle]="{ cursor: 'pointer' }"
+      routerLink="/home/ver"
+    >
+      Ver Tareas
+    </p>
   </div>
   <hr />
   <h2 class="aside__title aside__title--size">Otras aplicaciones</h2>

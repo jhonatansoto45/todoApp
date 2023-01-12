@@ -1,0 +1,60 @@
+.list {
+  margin: 35px;
+  height: 535px;
+  overflow-y: scroll;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.list__hour {
+  font-weight: 700;
+}
+
+.list__plan {
+  padding: 15px 25px;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--color-text);
+  width: 300px;
+  max-height: 100px;
+}
+
+.list__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list__actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.list__btn {
+  font-size: 1.8rem;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  color: var(--color-text);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.list__btn:hover {
+  background-color: var(--color-text);
+  color: var(--primary-color);
+}

@@ -8,6 +8,7 @@ import { AgregarComponent } from './pages/agregar/agregar.component';
 import { AsideComponent } from './pages/components/aside/aside.component';
 import { BannerComponent } from './pages/components/banner/banner.component';
 import { HomeViewComponent } from './pages/components/home-view/home-view.component';
+import { TareasViewComponent } from './pages/components/tareas-view/tareas-view.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HomeViewComponent } from './pages/components/home-view/home-view.compon
     AsideComponent,
     BannerComponent,
     HomeViewComponent,
+    TareasViewComponent,
   ],
   imports: [CommonModule, TodoRoutingModule],
 })

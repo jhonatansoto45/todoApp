@@ -1,1 +1,24 @@
-<p>tareas works!</p>
+<div class="container">
+  <section class="tareas">
+    <article class="tareas__user">
+      <h1 class="tareas__title">Hola, Romaguera-Crona</h1>
+      <figure class="tareas__picture">
+        <img
+          src="../../../../assets/images/user.jpg"
+          alt="user"
+          class="tareas__img"
+        />
+      </figure>
+    </article>
+  </section>
+  <br />
+  <hr />
+  <section class="plan">
+    <span class="plan__title">
+      Tus tareas para hoy
+      <span class="plan__date"> {{ date | date : "fullDate" }} </span>
+      <span class="material-symbols-outlined plan__icon"> calendar_month </span>
+    </span>
+    <app-tareas-view></app-tareas-view>
+  </section>
+</div>
