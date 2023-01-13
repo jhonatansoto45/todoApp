@@ -47,9 +47,25 @@ input {
   outline: none;
   border-radius: var(--border-radius);
   font-size: 1.2rem;
-  color: var(--color-text);
 }
 
 input[type="date"] {
   width: 173px;
+}
+
+.agregar__btn {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 10px 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.agregar__btn:hover {
+  background-color: var(--color-text);
+  color: var(--primary-color);
 }
