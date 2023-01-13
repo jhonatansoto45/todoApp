@@ -12,12 +12,6 @@ export class TodoService {
       descripcion: 'Organizar todo el cuarto.',
       completado: false,
     },
-    {
-      fecha: '2022-01-12',
-      titulo: 'Organizar habitación',
-      descripcion: 'Organizar todo el cuarto.',
-      completado: false,
-    },
   ];
 
   constructor() {}
