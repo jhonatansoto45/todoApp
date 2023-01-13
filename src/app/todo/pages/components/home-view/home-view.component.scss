@@ -1,16 +1,22 @@
 .view {
-  padding: 45px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 45px;
 }
+
+.view__article{
+  width: 450px;
+}
+
 .view__title {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .view__paragraph {
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .view__cta {
@@ -34,8 +40,8 @@
   background-position: center;
   background-size: contain;
   border-radius: 50px;
-  width: 600px;
-  height: 700px;
+  width: 400px;
+  height: 550px;
   position: relative;
 }
 
@@ -43,8 +49,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   backdrop-filter: blur(3px);
   border-radius: var(--border-radius);
   border: 3px solid var(--color-text);
