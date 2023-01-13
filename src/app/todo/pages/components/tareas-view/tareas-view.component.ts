@@ -13,7 +13,6 @@ export class TareasViewComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.listadoTareas !== null && !this.listadoTareas.length) {
-      this.loading = true;
       this.stateLocal();
     }
   }
@@ -54,8 +53,11 @@ export class TareasViewComponent implements OnInit {
 
   //* LOCALSTORAGE
   private stateLocal(): void {
-    const savedStorage = JSON.parse(localStorage.getItem('tareas')!);
-    this.todoService.dataTareas = savedStorage;
+    this.loading = true;
+    if (localStorage.getItem('tareas')) {
+      const savedStorage = JSON.parse(localStorage.getItem('tareas')!);
+      this.todoService.dataTareas = savedStorage;
+    }
     this.loading = false;
   }
 }
