@@ -15,6 +15,7 @@
 
 .list__hour {
   font-weight: 700;
+  width: 100px;
 }
 
 .list__plan {
@@ -58,4 +59,26 @@
 .list__btn:hover {
   background-color: var(--color-text);
   color: var(--primary-color);
+}
+
+button {
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.isComplete {
+  text-decoration: line-through;
+}
+
+.list__complete {
+  width: 140px;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  background-color: #22C55E;
+
+  .list__completeText {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
 }

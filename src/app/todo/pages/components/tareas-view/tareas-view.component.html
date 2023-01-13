@@ -1,19 +1,46 @@
 <section class="list">
+  <ng-template *ngIf="loading; then loadingT; else todos"></ng-template>
+</section>
+
+<ng-template #loadingT>
+  <app-loading></app-loading>
+</ng-template>
+
+<ng-template #todos>
   <div class="container" *ngFor="let tarea of listadoTareas">
-    <span class="list__hour"> {{ tarea.fecha | date }} </span>
+    <span class="list__hour" [ngClass]="{ isComplete: tarea.completado }">
+      {{ tarea.fecha | date }}
+    </span>
     <div class="list__plan">
-      <h3 class="list__title" [title]="tarea.titulo">{{ tarea.titulo }}</h3>
-      <p class="list__description" [title]="tarea.descripcion">
+      <h3
+        class="list__title"
+        [title]="tarea.titulo"
+        [ngClass]="{ isComplete: tarea.completado }"
+      >
+        {{ tarea.titulo }}
+      </h3>
+      <p
+        class="list__description"
+        [title]="tarea.descripcion"
+        [ngClass]="{ isComplete: tarea.completado }"
+      >
         {{ tarea.descripcion }}
       </p>
     </div>
-    <div class="list__actions">
-      <span class="material-symbols-outlined list__btn" title="Completado">
-        done
-      </span>
-      <span class="material-symbols-outlined list__btn" title="Eliminar">
-        delete
-      </span>
+    <div *ngIf="!tarea.completado" class="list__actions">
+      <button (click)="completado(tarea)">
+        <span class="material-symbols-outlined list__btn" title="Completado">
+          done
+        </span>
+      </button>
+      <button (click)="eliminar(tarea)">
+        <span class="material-symbols-outlined list__btn" title="Eliminar">
+          delete
+        </span>
+      </button>
+    </div>
+    <div class="list__complete" *ngIf="tarea.completado">
+      <p class="list__completeText">Completado.</p>
     </div>
   </div>
-</section>
+</ng-template>
